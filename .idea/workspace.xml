@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="">
+    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day2/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day1/task1/First1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day1/task1/First1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.First4">
+  <component name="RunManager" selected="Application.Task1">
     <configuration name="First1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day1.task1.First1" />
       <module name="java-tasks" />
@@ -100,8 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day2.Task1" />
+      <module name="java-tasks" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task1" />
         <item itemvalue="Application.First4" />
         <item itemvalue="Application.First3" />
         <item itemvalue="Application.First2" />
@@ -118,6 +132,18 @@
       <option name="presentableId" value="Default" />
       <updated>1687535443951</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1687886417167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687886417167</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
