@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day2/readme.txt" afterDir="false" />
+    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="day2 -&gt; Task1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +46,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Task1">
-    <configuration name="First1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="day1.task1.First1" />
+  <component name="RunManager" selected="Application.CodeWarsTasks">
+    <configuration name="CodeWarsTasks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codewars.CodeWarsTasks" />
       <module name="java-tasks" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day1.task1.*" />
+          <option name="PATTERN" value="codewars.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeWarsTasks" />
         <item itemvalue="Application.Task1" />
         <item itemvalue="Application.First4" />
         <item itemvalue="Application.First3" />
         <item itemvalue="Application.First2" />
-        <item itemvalue="Application.First1" />
       </list>
     </recent_temporary>
   </component>
@@ -139,11 +138,19 @@
       <option name="project" value="LOCAL" />
       <updated>1687886417167</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day2 -&gt; Task1">
+      <created>1688054851465</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688054851465</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="day2 -&gt; Task1" />
+    <option name="LAST_COMMIT_MESSAGE" value="day2 -&gt; Task1" />
   </component>
 </project>
