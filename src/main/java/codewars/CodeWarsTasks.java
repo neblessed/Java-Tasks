@@ -21,6 +21,6 @@ public class CodeWarsTasks {
                     if (x.toCharArray().length >= 5) {
                         return new StringBuilder(x).reverse() + " ";
                     } else return x + " ";
-                }).collect(Collectors.joining()).trim();
+                }).collect(Collectors.joining());
     }
 }
