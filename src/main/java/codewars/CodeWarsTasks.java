@@ -39,4 +39,26 @@ public class CodeWarsTasks {
     public static int sumOfPositiveValuesInArray(int[] arr) {
         return IntStream.of(arr).filter(x -> x > 0).sum();
     }
+
+    /*
+    Task: Sums of Parts
+    The function parts_sums (or its variants in other languages) will take as parameter
+    a list ls and return a list of the sums of its parts as defined above.
+    Example:
+    ls = [0, 1, 3, 6, 10]
+    ls = [1, 3, 6, 10]
+    ls = [3, 6, 10]
+    ls = [6, 10]
+    ls = [10]
+    ls = []
+    */
+    public static int[] sumOfParts(int[] arr) {
+        int[] sum = new int[arr.length + 1];
+        for (int i = 0; i < arr.length; i++) {
+            sum[i] = IntStream.of(arr).sum();
+            arr[i] = 0;
+        }
+        sum[sum.length - 1] = 0;
+        return sum;
+    }
 }
