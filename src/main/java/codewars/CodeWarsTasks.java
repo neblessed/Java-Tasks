@@ -31,4 +31,12 @@ public class CodeWarsTasks {
     public static int findSmallestInt(int[] args) {
         return Arrays.stream(args).sorted().toArray()[0];
     }
+
+    /*
+    Task: Sum of positives
+    You get an array of numbers, return the sum of all the positives ones.
+    */
+    public static int sumOfPositiveValuesInArray(int[] arr) {
+        return IntStream.of(arr).filter(x -> x > 0).sum();
+    }
 }
