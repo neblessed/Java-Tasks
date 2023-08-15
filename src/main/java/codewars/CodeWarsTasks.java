@@ -61,4 +61,21 @@ public class CodeWarsTasks {
         sum[sum.length - 1] = 0;
         return sum;
     }
+
+    /*
+    Task: "Simple Pig Latin"
+    Move the first letter of each word to the end of it,
+    then add "ay" to the end of the word.
+    Leave punctuation marks untouched.
+    */
+    public static String phraseReverser(String phrase) {
+        return Arrays.stream(phrase.split(" ")).map(x -> {
+            char[] word = x.toCharArray();
+            char move = word[0];
+            String result = new String(word).substring(1, word.length).concat(String.valueOf(move));
+            char[] resArr = result.toCharArray();
+            Matcher matcher = Pattern.compile("^\\W").matcher(String.valueOf(resArr[resArr.length-1]));
+            return (matcher.matches()) ? result : result + "ay ";
+        }).collect(Collectors.joining()).trim();
+    }
 }
