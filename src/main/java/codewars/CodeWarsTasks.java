@@ -78,4 +78,29 @@ public class CodeWarsTasks {
             return (matcher.matches()) ? result : result + "ay ";
         }).collect(Collectors.joining()).trim();
     }
+
+    /*
+    Task: "Multiplication table"
+    Your task, is to create N×N multiplication table, of size provided in parameter.
+
+    For example, when given size is 3:
+    1 2 3
+    2 4 6
+    3 6 9
+    */
+    public static int[][] multiplicationTable(int n) {
+        int[][] table = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            if (i < 1) {
+                for (int j = 0; j < n; j++) {
+                    table[i][j] = j + 1;
+                }
+            } else {
+                for (int j = 0; j < n; j++) {
+                    table[i][j] = table[0][j]*(i+1);
+                }
+            }
+        }
+        return table;
+    }
 }
