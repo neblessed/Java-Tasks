@@ -23,4 +23,12 @@ public class CodeWarsTasks {
                     } else return x + " ";
                 }).collect(Collectors.joining());
     }
+
+    /*
+    Task: "Find the smallest integer in the array"
+    Given an array of integers your solution should find the smallest integer.
+    */
+    public static int findSmallestInt(int[] args) {
+        return Arrays.stream(args).sorted().toArray()[0];
+    }
 }
