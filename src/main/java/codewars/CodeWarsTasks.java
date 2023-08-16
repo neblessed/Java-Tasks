@@ -1,7 +1,12 @@
 package codewars;
 
+import java.util.*;
+import java.util.List;
 import java.util.Arrays;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
@@ -102,5 +107,24 @@ public class CodeWarsTasks {
             }
         }
         return table;
+    }
+
+    /*
+    Task: "Which are in?"
+    Given two arrays of strings a1 and a2 return a sorted array r in lexicographical
+    order of the strings of a1 which are substrings of strings of a2.
+    Example 1:
+    a1 = ["arp", "live", "strong"]
+    a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+    returns ["arp", "live", "strong"]
+    */
+    public static String[] inArray(String[] array1, String[] array2) {
+        Set<String> result = new HashSet<>();
+        for (String s : array2) {
+            result.addAll(Arrays.stream(array1).filter(s::contains).sorted().toList());
+        }
+        List<String> sorted = new ArrayList<>(result);
+        Collections.sort(sorted);
+        return sorted.toArray(new String[sorted.size()]);
     }
 }
