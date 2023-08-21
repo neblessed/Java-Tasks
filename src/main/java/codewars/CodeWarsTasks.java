@@ -11,8 +11,7 @@ import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
-    String s = "ATTGC";
-        System.out.println(makeComplement(s));
+        System.out.println(opposite(-5));
     }
 
     /*
@@ -181,6 +180,7 @@ public class CodeWarsTasks {
                 .filter(x -> x.equals(true))
                 .toList().size();
     }
+
     /*
     Task: Complementary DNA
     Example: (input --> output)
@@ -198,5 +198,23 @@ public class CodeWarsTasks {
             }
         }
         return s.toString().trim();
+    }
+
+    public static int opposite(int number) {
+        return number > 0 ? Math.negateExact(number) : Math.abs(number);
+    }
+
+    /*
+    Task: "Abbreviate a Two Word Name"
+    Write a function to convert a name into initials.
+    This kata strictly takes two words with one space in between them.
+    The output should be two capital letters with a dot separating them.
+    It should look like this: "Sam Harris => S.H"
+    */
+    public static String abbrevName(String name) {
+        return Arrays.stream(name.split(" "))
+                .map(x -> String.valueOf(x.toCharArray()[0]))
+                .collect(Collectors.joining("."))
+                .substring(0, 3).toUpperCase();
     }
 }
