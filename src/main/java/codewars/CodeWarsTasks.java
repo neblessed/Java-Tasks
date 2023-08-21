@@ -11,8 +11,13 @@ import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
-        String s = "   ";
-        System.out.println(reverseWords(s));
+        Boolean[] array1 = {true, true, true, false,
+                true, true, true, true,
+                true, false, true, false,
+                true, false, false, true,
+                true, true, true, true,
+                false, false, true, true};
+        System.out.println(countSheeps(array1));
     }
 
     /*
@@ -153,6 +158,7 @@ public class CodeWarsTasks {
                 .map(StringBuilder::toString)
                 .collect(Collectors.joining(" "));
     }
+
     /*
     Task: "Sum Arrays"
 
@@ -163,5 +169,21 @@ public class CodeWarsTasks {
     */
     public static double sumDoubleArray(double[] numbers) {
         return DoubleStream.of(numbers).sum();
+    }
+
+    public static String noSpace(final String x) {
+        return String.join("", x.split(" "));
+    }
+
+    /*
+    Task: Counting sheep...
+    Consider an array/list of sheep where some sheep may be missing from their place.
+    We need a function that counts the number of sheep present in the array (true means present).
+    */
+    public static int countSheeps(Boolean[] arrayOfSheeps) {
+        return Arrays.stream(arrayOfSheeps)
+                .filter(Objects::nonNull)
+                .filter(x -> x.equals(true))
+                .toList().size();
     }
 }
