@@ -10,6 +10,8 @@ import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
+        String s = "   ";
+        System.out.println(reverseWords(s));
     }
 
     /*
@@ -126,11 +128,27 @@ public class CodeWarsTasks {
         Collections.sort(sorted);
         return sorted.toArray(new String[sorted.size()]);
     }
+
     /*
     Complete the solution so that it returns true if the first argument(string)
     passed in ends with the 2nd argument (also a string).
     */
     public static boolean wordEndsWord(String str, String ending) {
         return str.endsWith(ending);
+    }
+    /*
+    Complete the function that accepts a string parameter,
+    and reverses each word in the string.
+    All spaces in the string should be retained.
+
+    Example: "This is an example!" ==> "sihT si na !elpmaxe"
+    */
+    public static String reverseWords(final String original) {
+        return (original.isBlank())
+                ? original
+                : Arrays.stream(original.split(" "))
+                .map(x -> new StringBuilder(x).reverse())
+                .map(StringBuilder::toString)
+                .collect(Collectors.joining(" "));
     }
 }
