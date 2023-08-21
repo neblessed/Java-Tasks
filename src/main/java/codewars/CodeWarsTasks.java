@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
@@ -136,6 +137,7 @@ public class CodeWarsTasks {
     public static boolean wordEndsWord(String str, String ending) {
         return str.endsWith(ending);
     }
+
     /*
     Complete the function that accepts a string parameter,
     and reverses each word in the string.
@@ -150,5 +152,16 @@ public class CodeWarsTasks {
                 .map(x -> new StringBuilder(x).reverse())
                 .map(StringBuilder::toString)
                 .collect(Collectors.joining(" "));
+    }
+    /*
+    Task: "Sum Arrays"
+
+    Write a function that takes an array
+    of numbers and returns the sum of the numbers.
+    The numbers can be negative or non-integer.
+    If the array does not contain any numbers then you should return 0.
+    */
+    public static double sumDoubleArray(double[] numbers) {
+        return DoubleStream.of(numbers).sum();
     }
 }
