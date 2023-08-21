@@ -11,13 +11,8 @@ import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
-        Boolean[] array1 = {true, true, true, false,
-                true, true, true, true,
-                true, false, true, false,
-                true, false, false, true,
-                true, true, true, true,
-                false, false, true, true};
-        System.out.println(countSheeps(array1));
+    String s = "ATTGC";
+        System.out.println(makeComplement(s));
     }
 
     /*
@@ -185,5 +180,23 @@ public class CodeWarsTasks {
                 .filter(Objects::nonNull)
                 .filter(x -> x.equals(true))
                 .toList().size();
+    }
+    /*
+    Task: Complementary DNA
+    Example: (input --> output)
+    "ATTGC" --> "TAACG"
+    "GTAT" --> "CATA"
+    */
+    public static String makeComplement(String dna) {
+        StringBuilder s = new StringBuilder(" ");
+        for (char c : dna.toCharArray()) {
+            switch (c) {
+                case 'A' -> s.append("T");
+                case 'T' -> s.append("A");
+                case 'C' -> s.append("G");
+                case 'G' -> s.append("C");
+            }
+        }
+        return s.toString().trim();
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="CW &quot;Sum Arrays&#10;&quot;">
+    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="CW &quot;Counting sheep...&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java" afterDir="false" />
     </list>
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692631645358</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="CW &quot;Counting sheep...&quot;">
+      <created>1692632431031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692632431031</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,20 +216,7 @@
     <MESSAGE value="CW &quot;String ends with?&quot;" />
     <MESSAGE value="CW &quot;Reverse words&quot;" />
     <MESSAGE value="CW &quot;Sum Arrays&#10;&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="CW &quot;Sum Arrays&#10;&quot;" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java</url>
-          <line>183</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="CW &quot;Counting sheep...&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="CW &quot;Counting sheep...&quot;" />
   </component>
 </project>
