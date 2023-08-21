@@ -10,7 +10,6 @@ import java.util.stream.IntStream;
 
 public class CodeWarsTasks {
     public static void main(String[] args) {
-        System.out.println(spinWords("Привет всем"));
     }
 
     /*
@@ -79,7 +78,7 @@ public class CodeWarsTasks {
             char move = word[0];
             String result = new String(word).substring(1, word.length).concat(String.valueOf(move));
             char[] resArr = result.toCharArray();
-            Matcher matcher = Pattern.compile("^\\W").matcher(String.valueOf(resArr[resArr.length-1]));
+            Matcher matcher = Pattern.compile("^\\W").matcher(String.valueOf(resArr[resArr.length - 1]));
             return (matcher.matches()) ? result : result + "ay ";
         }).collect(Collectors.joining()).trim();
     }
@@ -102,7 +101,7 @@ public class CodeWarsTasks {
                 }
             } else {
                 for (int j = 0; j < n; j++) {
-                    table[i][j] = table[0][j]*(i+1);
+                    table[i][j] = table[0][j] * (i + 1);
                 }
             }
         }
@@ -126,5 +125,12 @@ public class CodeWarsTasks {
         List<String> sorted = new ArrayList<>(result);
         Collections.sort(sorted);
         return sorted.toArray(new String[sorted.size()]);
+    }
+    /*
+    Complete the solution so that it returns true if the first argument(string)
+    passed in ends with the 2nd argument (also a string).
+    */
+    public static boolean wordEndsWord(String str, String ending) {
+        return str.endsWith(ending);
     }
 }

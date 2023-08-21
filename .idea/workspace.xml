@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="Task: &quot;Stop gninnipS My sdroW!&quot;">
+    <list default="true" id="574537b2-db31-4d1c-86c4-86b9adbc7c37" name="Changes" comment="CW &quot;String ends with?&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/codewars/CodeWarsTasks.java" afterDir="false" />
     </list>
@@ -152,13 +152,40 @@
       <option name="project" value="LOCAL" />
       <updated>1692027261348</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&quot;Stop gninnipS My sdroW!&quot; update">
+      <created>1692029026714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692029026714</updated>
+    </task>
+    <task id="LOCAL-00005" summary="&quot;Stop gninnipS My sdroW!&quot; update">
+      <created>1692029042367</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692029042367</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <MESSAGE value="day2 -&gt; Task1" />
     <MESSAGE value="Task: &quot;Stop gninnipS My sdroW!&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task: &quot;Stop gninnipS My sdroW!&quot;" />
+    <MESSAGE value="&quot;Stop gninnipS My sdroW!&quot; update" />
+    <MESSAGE value="CW &quot;String ends with?&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="CW &quot;String ends with?&quot;" />
   </component>
 </project>
